@@ -1,5 +1,9 @@
 # SpotiApp
 
+> Preview of the running project.
+
+![preview.](https://github.com/brayangomez22/SpotiApp/blob/master/src/assets/img/preview.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
