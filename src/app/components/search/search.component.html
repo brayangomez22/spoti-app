@@ -1,1 +1,15 @@
-<p>search works!</p>
+<div class="row">
+  <div class="col">
+    <input
+      #term
+      type="text"
+      (keyup)="search(term.value)"
+      class="form-control"
+      placeholder="Search Artist..."
+    />
+  </div>
+</div>
+
+<app-loading *ngIf="loading" style="margin-top: 20px"></app-loading>
+
+<app-cards *ngIf="!loading" [items]="artists"></app-cards>

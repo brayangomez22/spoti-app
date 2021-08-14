@@ -1,9 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
-
 body {
   background-color: black;
   color: white !important;
+}
+
+iframe {
+  border-radius: 10px;
 }
 
 hr {
@@ -15,9 +16,13 @@ hr {
 }
 
 .img-circle {
-  background: fixed;
   border-radius: 100%;
   width: 150px;
+  height: 150px;
+}
+
+.img-rounded {
+  border-radius: 5px;
 }
 
 .card-title,
@@ -34,8 +39,42 @@ hr {
 }
 
 .img-thumb {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+}
+
+.app--link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.app--link:hover {
+  color: rgb(156, 156, 156);
+}
+
+.artist__table-fr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+  align-items: center;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.artist__wrapper-profile {
+  display: flex;
+  width: 400px;
+  align-items: center;
+}
+
+.artist__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.artist__image {
+  flex: 1;
 }
 
 /* Animaciones */
@@ -65,4 +104,42 @@ hr {
 
 .fadeIn {
   animation-name: fadeIn;
+}
+@media (max-width: 535px) {
+  .artist__profile {
+    display: block;
+  }
+
+  .artist__back button {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .artist__wrapper-profile {
+    width: 320px;
+  }
+}
+
+@media (max-width: 995px) {
+  .artist__table-header {
+    display: none;
+  }
+
+  .artist__table-fr {
+    text-align: center;
+    grid-template-columns: 1fr;
+    border: none;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+
+  .img-thumb {
+    width: 200px;
+    height: 200px;
+  }
+
+  .img-rounded {
+    border-radius: 100%;
+  }
 }
